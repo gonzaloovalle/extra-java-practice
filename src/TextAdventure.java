@@ -68,7 +68,7 @@ public class TextAdventure {
                 if(choice == 1){
                     System.out.println("You try to reply, but soon you realize that for some unknown reason you are unable to speak.");
                     System.out.println("");
-                    System.out.println("The officer shakes their head");
+                    System.out.println("The officer shakes their head.");
                     System.out.println("");
                     System.out.println("Officer: A mute huh? You must be a victim of one of those wizards from out in the wildlands. Go see the local healer, they're just north of the square.");
                     healerShop();
@@ -103,8 +103,8 @@ public class TextAdventure {
 
     public void healerShop(){
         System.out.println("\n-------------------------------------------------------------------------------------\n");
-        System.out.println("You follow the officer's directions and soon find yourself in front of a shop with the five pointed star set with a flaming eye in the middle, the sign for a healer in these parts");
-        System.out.println("As you enter the shop you are assaulted with a melange of herbs and spices");
+        System.out.println("You follow the officer's directions and soon find yourself in front of a shop with the five pointed star set with a flaming eye set in the middle, \nthe sign for a healer in these parts.");
+        System.out.println("As you enter the shop you are assaulted with a melange of herbs and spices.");
         System.out.println("You begin to call out to see if there is anyone in the shop before you remember your predicament.");
         System.out.println("You see a bell sitting on a counter next to bottles filled with various powders and liquids.");
         System.out.println("");
@@ -118,14 +118,44 @@ public class TextAdventure {
         choice = myScanner.nextInt();
 
         if(choice == 1){
-            System.out.println("As soon as you ring the bell you hear the shuffling of feet and a bearded old man appears behind the counter as if from nowhere.");
+            System.out.println("As soon as you ring the bell you hear the shuffling of feet as a bearded old man appears behind the counter as if from nowhere. \nYou notice an unusual glint in his eyes.");
             System.out.println("Old Man: Hello there! What can I do for you today?");
             System.out.println("You attempt to explain your problem through gestures and pointed looks.");
             System.out.println("The old man appears to understand. He reaches for one of the innumerable bottles on the counter and hands it to you.");
             System.out.println("Old Man: Here you are, free of charge. This potion will lead you back to your lost voice.");
+            System.out.println("As you drink the potion you feel an unusual sensation in your stomach before your vision goes dark.");
+//            forestPath();
         }
         else if(choice == 2){
-            System.out.println("You choose a bottle at random and uncork it. The odor of peppermint and ");
+            System.out.println("You choose a bottle at random and uncork it. The pleasant odor of peppermint and cocoa wafts up to your nose.");
+            System.out.println("");
+            System.out.println("What do you want to do?");
+            System.out.println("");
+            System.out.println("1: Drink the contents of the bottle");
+            System.out.println("2: Close the bottle and set it back down");
+            System.out.println("3: Throw the bottle at the wall");
+
+            choice = myScanner.nextInt();
+
+            if(choice == 1){
+                System.out.println("As you drink the potion you feel an unusual sensation in your stomach before your vision goes dark.");
+//                forestPath();
+            }
+            else if(choice == 2){
+                System.out.println("You close up the bottle and set it back down on the counter.");
+                System.out.println("As you continue to look around the shop you begin to feel a growing sense of unease.\n You decide that you would rather take your chances in the city streets than stay in this shop another minute.");
+//                sideStreet();
+            }
+            else if (choice == 3){
+                playerHP = 0;
+                System.out.println("You instantly regret your decision as the breaking of the potion causes a chain reaction among the other potions in the store.");
+                System.out.println("Soon you find yourself engulfed in an incredible explosion.");
+                System.out.println("They don't find much more of you in the aftermath than scraps of cloth.");
+                System.out.println("Your HP:" + playerHP );
+            }
+        }
+        else if(choice == 3){
+//            sideStreet();
         }
     }
 
