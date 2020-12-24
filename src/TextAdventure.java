@@ -81,7 +81,7 @@ public class TextAdventure {
                     townSquare();
                 }
                 else if(choice == 3){
-//                    sideStreet();
+                    sideStreet();
                 }
             }
         }
@@ -155,7 +155,28 @@ public class TextAdventure {
             }
         }
         else if(choice == 3){
-//            sideStreet();
+            sideStreet();
+        }
+    }
+
+    public void sideStreet(){
+        System.out.println("\n-------------------------------------------------------------------------------------\n");
+        System.out.println("You wander the maze of city streets until you find yourself in a dim back alley.");
+        System.out.println("Looking around you notice that there are only a few other people in the alley with you.");
+        System.out.println("The people are huddled together in a group. They seem to be arguing about something.");
+        System.out.println("");
+        System.out.println("What do you want to do?");
+        System.out.println("");
+        System.out.println("1: Walk up to the people");
+        System.out.println("2: Walk out of the alley");
+        System.out.println("3: Attack the people");
+        System.out.println("\n-------------------------------------------------------------------------------------\n");
+
+        choice = myScanner.nextInt();
+
+        if (choice == 1){
+            System.out.println("As you walk up to the people you begin to smell an unusual odor, like sulphur and brimstone.");
+            System.out.println();
         }
     }
 
